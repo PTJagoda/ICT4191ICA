@@ -13,7 +13,7 @@ namespace Real_StateBusiness.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202010151041349_tbl"; }
+            get { return "202010170524409_tbl"; }
         }
         
         string IMigrationMetadata.Source

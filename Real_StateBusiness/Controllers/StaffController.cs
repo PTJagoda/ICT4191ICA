@@ -18,7 +18,6 @@ namespace Real_StateBusiness.Controllers
             return View(Staffs);
 
         }
-
         public ActionResult create()
         {
             ViewBag.BranchDetails = mycontext.Branches;
@@ -35,9 +34,49 @@ namespace Real_StateBusiness.Controllers
 
         public ActionResult Details(string id)
         {
+           
             Staff staff = mycontext.Staffs.SingleOrDefault(x => x.StaffNo == id);
             return View(staff);
         }
-       
+
+        public ActionResult Edit(string id)
+        {
+            
+            Staff staff = mycontext.Staffs.SingleOrDefault(x => x.StaffNo == id);
+            ViewBag.BranchDetails = new SelectList(mycontext.Branches, "BranchNo", "BranchNo");
+            return View(staff);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(string id, Staff updatedStaff)
+        {
+            Staff staff = mycontext.Staffs.SingleOrDefault(x => x.StaffNo == id);
+            staff.FName = updatedStaff.FName;
+            staff.LName = updatedStaff.LName;
+            staff.Position = updatedStaff.Position;
+            staff.Salary = updatedStaff.Salary;
+            staff.BranchRef = updatedStaff.BranchRef;
+            mycontext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Delete(string id)
+        {
+
+            Staff staff = mycontext.Staffs.SingleOrDefault(x => x.StaffNo == id);
+            return View(staff);
+        }
+
+        [HttpPost, ActionName("Delete")]
+
+        public ActionResult DeleteBranch(string id)
+        {
+
+            Staff staff = mycontext.Staffs.SingleOrDefault(x => x.StaffNo == id);
+            mycontext.Staffs.Remove(staff);
+            mycontext.SaveChanges();
+            return View(staff);
+        }
+
     }
 }

@@ -150,7 +150,7 @@ D:\Campus\ICT4191ICA\Real_StateBusiness\bin\System.Web.Webpages.Razor.xml
 D:\Campus\ICT4191ICA\Real_StateBusiness\bin\System.Web.Helpers.xml
 D:\Campus\ICT4191ICA\Real_StateBusiness\bin\System.Web.Mvc.xml
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.csprojResolveAssemblyReference.cache
-D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.Migrations.tbl.resources
-D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.csproj.GenerateResource.Cache
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.dll
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.pdb
+D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.Migrations.tbl.resources
+D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.csproj.GenerateResource.Cache
