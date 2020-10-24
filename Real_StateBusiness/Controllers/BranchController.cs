@@ -72,5 +72,41 @@ namespace Real_StateBusiness.Controllers
             return View(branch);
         }
 
+        public ActionResult Branch(string br)
+        {
+            
+            var Allbranch = mycontext.Branches.ToList();
+
+            int x = 0;
+            int y = 0;
+
+            foreach(Branch branch in Allbranch)
+            {
+                x = x + 1;
+            }
+
+            string[] pos = new string[x];
+
+            foreach (Branch branch in Allbranch)
+            {
+                pos[y] = branch.BranchNo;
+                y = y + 1;
+            }
+
+            var distinctArray = pos.Distinct().ToArray();
+            ViewBag.BranchNo = distinctArray;
+
+
+            return View();
+        }
+
+        public ActionResult NoOfBilding(string br)
+        { 
+            ViewBag.count = mycontext.Rents.Where(x => x.BranchRef == br).ToList().Count();
+            return View();
+
+        }
+
+
     }
 }

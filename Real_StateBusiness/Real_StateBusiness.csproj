@@ -139,6 +139,8 @@
     <Content Include="Views\Branch\Index.cshtml" />
     <Content Include="Views\Branch\Edit.cshtml" />
     <Content Include="Views\Branch\Delete.cshtml" />
+    <Content Include="Views\Branch\Branch.cshtml" />
+    <Content Include="Views\Branch\NoOfBilding.cshtml" />
     <None Include="Views\Branch\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Views\Branch\scripts\jquery-1.10.2.js" />
     <Content Include="Views\Branch\scripts\jquery-1.10.2.min.js" />
@@ -195,12 +197,9 @@
     <Content Include="Views\Staff\Delete.cshtml" />
     <Content Include="Views\Staff\create.cshtml" />
     <Content Include="Views\Rent\create.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Rent\Edit.cshtml" />
     <Content Include="Views\Rent\Details.cshtml" />
     <Content Include="Views\Rent\Delete.cshtml" />
-    <Content Include="Views\Home\Position.cshtml" />
-    <Content Include="Views\Home\PosDetails.cshtml" />
     <Content Include="Views\Rent\Index.cshtml" />
     <Content Include="Views\Rent\City.cshtml" />
     <Content Include="Views\Rent\city1.cshtml" />
@@ -213,7 +212,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010170524409_tbl.resx">
       <DependentUpon>202010170524409_tbl.cs</DependentUpon>
