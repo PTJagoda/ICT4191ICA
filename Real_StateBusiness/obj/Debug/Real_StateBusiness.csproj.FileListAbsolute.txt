@@ -154,3 +154,4 @@ D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.dll
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.pdb
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.Migrations.tbl.resources
 D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.csproj.GenerateResource.Cache
+D:\Campus\ICT4191ICA\Real_StateBusiness\obj\Debug\Real_StateBusiness.Migrations.tbl1.resources

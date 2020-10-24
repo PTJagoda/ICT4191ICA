@@ -28,5 +28,8 @@ namespace Real_StateBusiness.Models
         [ForeignKey("Branch")]
         public String BranchRef { get; set; }
         public Branch Branch { get; set; }
+
+        [Column("Rent")]
+        public int Rental { get; set; }
     }
 }

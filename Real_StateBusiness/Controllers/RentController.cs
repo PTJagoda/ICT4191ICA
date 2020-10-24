@@ -14,7 +14,7 @@ namespace Real_StateBusiness.Controllers
         public ActionResult Index()
         {
             List<Rent> rents = mycontext.Rents.ToList();
-            return View();
+            return View(rents);
         }
         public ActionResult create()
         {
@@ -82,6 +82,38 @@ namespace Real_StateBusiness.Controllers
              mycontext.SaveChanges();
              return View(rent);
          }
+
+        public ActionResult City()
+        {
+            var Allcity = mycontext.Rents.ToList();
+
+            int x = 0;
+            int y = 0;
+
+            foreach(Rent rent in Allcity)
+            {
+                x = x + 1;
+            }
+
+            string[] pos = new string[x];
+
+            foreach(Rent rent in Allcity)
+            {
+                pos[y] = rent.City;
+                y = y + 1;
+            }
+
+            var distinctArray = pos.Distinct().ToArray();
+            ViewBag.City = distinctArray;
+
+            return View();
+        }
+
+        public ActionResult city1(string cy)
+        {
+            List<Rent> rent = mycontext.Rents.Where(x => x.City == cy).ToList();
+            return View(rent);
+        }
 
 
     }

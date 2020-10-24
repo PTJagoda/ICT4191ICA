@@ -163,6 +163,10 @@
     <Compile Include="Migrations\202010170524409_tbl.Designer.cs">
       <DependentUpon>202010170524409_tbl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010240848165_tbl1.cs" />
+    <Compile Include="Migrations\202010240848165_tbl1.Designer.cs">
+      <DependentUpon>202010240848165_tbl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\MyContext.cs" />
@@ -191,10 +195,17 @@
     <Content Include="Views\Staff\Delete.cshtml" />
     <Content Include="Views\Staff\create.cshtml" />
     <Content Include="Views\Rent\create.cshtml" />
-    <Content Include="Views\Rent\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Rent\Edit.cshtml" />
     <Content Include="Views\Rent\Details.cshtml" />
     <Content Include="Views\Rent\Delete.cshtml" />
+    <Content Include="Views\Home\Position.cshtml" />
+    <Content Include="Views\Home\PosDetails.cshtml" />
+    <Content Include="Views\Rent\Index.cshtml" />
+    <Content Include="Views\Rent\City.cshtml" />
+    <Content Include="Views\Rent\city1.cshtml" />
+    <Content Include="Views\Staff\Position.cshtml" />
+    <Content Include="Views\Staff\Position1.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -202,12 +213,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Home\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010170524409_tbl.resx">
       <DependentUpon>202010170524409_tbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010240848165_tbl1.resx">
+      <DependentUpon>202010240848165_tbl1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

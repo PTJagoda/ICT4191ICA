@@ -78,5 +78,38 @@ namespace Real_StateBusiness.Controllers
             return View(staff);
         }
 
+        public ActionResult Position()
+        {
+            var Allpositions = mycontext.Staffs.ToList();
+
+            int x = 0;
+            int y = 0;
+
+            foreach(Staff staff in Allpositions)
+            {
+                x = x + 1;
+            }
+
+            string[] pos = new string[x];
+
+            foreach (Staff staff in Allpositions)
+            {
+                pos[y] = staff.Position;
+                y = y + 1;
+            }
+
+            var distinctArray = pos.Distinct().ToArray();
+            ViewBag.Position = distinctArray;
+
+
+            return View();
+        }
+
+        public ActionResult Position1(string ps)
+        {
+            List<Staff> staff = mycontext.Staffs.Where(x => x.Position == ps).ToList();
+            return View(staff);
+        }
+
     }
 }
